@@ -109,25 +109,24 @@ public class FindingCommonElementsInTwoSortedLists {
 			System.out.print("NO COMMON INTEGERS");
 			System.exit(10); //Can be any number as long its not 0
 		}
+		
+		int duplicate = -1;
+		ArrayList<Integer> newerArray = new ArrayList<>();
+		
 		//Remove duplicates by creating a new array without duplicates then print the fourth new array
 		for(int t = 0; t < newArray.size()- 1; t++) {
-			if(newArray.get(t) == newArray.get(t+1)) {
-				newArray.remove(t);
-			}
-		}
-		//Have to a double check because we aren't putting the new ones into
-		for(int t = 0; t < newArray.size()- 1; t++) {
-			if(newArray.get(t) == newArray.get(t+1)) {
-				newArray.remove(t);
+			if(newArray.get(t) != duplicate) {
+				newerArray.add(newArray.get(t));
+				duplicate = newArray.get(t);
 			}
 		}
 		
-		for(int t = 0; t < newArray.size(); t++) {
-			if(t == newArray.size() - 1) {
-				System.out.print(newArray.get(t));
+		for(int t = 0; t < newerArray.size(); t++) {
+			if(t == newerArray.size() - 1) {
+				System.out.print(newerArray.get(t));
 			}
-			else {
-				System.out.print(newArray.get(t) + " ");
+			else if(newerArray.get(t) != 0) {
+				System.out.print(newerArray.get(t) + " ");
 			}
 		}
 		sc.close();
