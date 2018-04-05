@@ -1,0 +1,13 @@
+c:\users\alex\documents\visual studio 2015\Projects\Retail_Distibution\Retail_Distibution\bin\Debug\Retail_Distibution.exe.config
+c:\users\alex\documents\visual studio 2015\Projects\Retail_Distibution\Retail_Distibution\bin\Debug\Retail_Distibution.exe
+c:\users\alex\documents\visual studio 2015\Projects\Retail_Distibution\Retail_Distibution\bin\Debug\Retail_Distibution.pdb
+c:\users\alex\documents\visual studio 2015\Projects\Retail_Distibution\Retail_Distibution\obj\Debug\Retail_Distibution.csprojResolveAssemblyReference.cache
+c:\users\alex\documents\visual studio 2015\Projects\Retail_Distibution\Retail_Distibution\obj\Debug\Retail_Distibution.DistributionMainScreen.resources
+c:\users\alex\documents\visual studio 2015\Projects\Retail_Distibution\Retail_Distibution\obj\Debug\Retail_Distibution.ProductsSetForDistribution.resources
+c:\users\alex\documents\visual studio 2015\Projects\Retail_Distibution\Retail_Distibution\obj\Debug\Retail_Distibution.Properties.Resources.resources
+c:\users\alex\documents\visual studio 2015\Projects\Retail_Distibution\Retail_Distibution\obj\Debug\Retail_Distibution.searchItems.resources
+c:\users\alex\documents\visual studio 2015\Projects\Retail_Distibution\Retail_Distibution\obj\Debug\Retail_Distibution.csproj.GenerateResource.Cache
+c:\users\alex\documents\visual studio 2015\Projects\Retail_Distibution\Retail_Distibution\obj\Debug\Retail_Distibution.exe
+c:\users\alex\documents\visual studio 2015\Projects\Retail_Distibution\Retail_Distibution\obj\Debug\Retail_Distibution.pdb
+C:\Users\Alex\documents\visual studio 2015\Projects\Retail_Distibution\Retail_Distibution\bin\Debug\DistrubutionManagerDB.mdf
+C:\Users\Alex\documents\visual studio 2015\Projects\Retail_Distibution\Retail_Distibution\bin\Debug\DistrubutionManagerDB_log.ldf
