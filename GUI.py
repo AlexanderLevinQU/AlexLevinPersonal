@@ -1,3 +1,4 @@
+
 '''
 Meteorite GUI
 Alex Levin
@@ -262,8 +263,8 @@ def searchDB():
     recLong = 0
     recLat = 0
     for tuple in cursor.execute(command2, [searched.get()]):
-         recLong = tuple[0]
-         recLat = tuple[1]
+         recLat = tuple[0]
+         recLong = tuple[1]
     db.close()
     return webbrowser.open(urlBuilder(recLat,recLong))#insert query result lat,long here
 
@@ -294,13 +295,12 @@ def deletion():
         ##GET ID FROM NAME
         id = cursor.execute("SELECT ID FROM Meteor WHERE name = ?", (delete.get(),))
         db.commit()
-        realID = 0
         #Use comma to avoid ?
         cursor.execute("DELETE FROM Meteor WHERE name = ?", (delete.get(),))
         db.commit()
         cursor.execute("DELETE FROM Names WHERE name = ? ", (delete.get(),))
         db.commit()
-        cursor.execute("DELETE FROM GeoLocation WHERE ID = ?", (realID,))
+        cursor.execute("DELETE FROM GeoLocation WHERE ID = ?", (id,))
         db.commit()
         
     db.close()
@@ -324,6 +324,7 @@ def insertion():
     db.close()
 
 def searchAll():
+    #TO DO Make it so can search with all the attributes of any choice combo
     db = sqlite3.connect("NasaDB.sqlite")
     cursor = db.cursor()
     theid = searched.get()
@@ -339,9 +340,22 @@ def searchAll():
     ##Put them all in an array check if they have none
     values = [theid, therecLat, therecLong, therecClass, theName, theFall, theYear, theMass, theNameType]
     ##If they do add the where to the string for execution 
+    checkPrev = False
+    string = ""
     for i in range(0,8):
         if values[i] is not None:
+            if i == 0:
+                checkPrev = True
+                string = "m.ID = ? "
+            elif i == 1:
+                if checkPrev == True:
+                    string = string + "AND G.recLat = ?"
+                else:
+                    string = "G.recLat = ?"
+                pass
             pass
+        pass
+    pass
 
 ################################################################
 ######################GUI CREATION##############################
