@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:../finalBoomerangSwift/FootballTimesController.swift">
+   </FileRef>
+   <FileRef
+      location = "group:../finalBoomerangSwift/CnnController.swift">
+   </FileRef>
+   <FileRef
+      location = "group:../finalBoomerangSwift/CnnController.swift">
+   </FileRef>
+   <FileRef
+      location = "group:../finalBoomerangSwift/CnnController.swift">
+   </FileRef>
+   <FileRef
+      location = "group:../../Images/boomerang_mania_by_katiebell26-d7zdmo2.jpg">
+   </FileRef>
+   <FileRef
+      location = "group:../../Images/if_MetroUI_Messaging_Alt_176579.png">
+   </FileRef>
+   <FileRef
+      location = "group:../../Images/sendMailIcon.png">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/ajlevin/Desktop/boomerangSwift/finalBoomerangSwift/Images">
+   </FileRef>
+   <FileRef
+      location = "self:">
+   </FileRef>
+</Workspace>
